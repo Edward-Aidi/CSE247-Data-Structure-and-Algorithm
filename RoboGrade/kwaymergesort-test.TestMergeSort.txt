@@ -1,0 +1,155 @@
+-------------------
+CSE247 Robot tester starts testing kwaymergesort on 2018-04-07 13:32:30 -0500
+
+========
+Testing in ./GradingRepos/repos/cse247-s18-students-d.ai: kwaymergesort as of 2018-03-29 01:00 2018-04-05 01:00
+========
+Now in: /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-d.ai
+Your branch is up-to-date with 'origin/master'.
+HEAD is now at b081d23 studio 10
+No local changes to save
+
+Updating b081d23..2e2dc6b
+Fast-forward
+ RoboGrade/spath-testing.TestShortestPathSilent.txt | 75 ++++++++++++++--------
+ 1 file changed, 47 insertions(+), 28 deletions(-)
+Going back in time to: 2018-03-29 01:00 2018-04-05 01:00
+At hash be52d4f38c6dee187a427b8a1d8941d02729cdc7
+
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+copytest:
+     [echo] would copy from /Users/puneetsachdeva/git/cse247-s18-students key d.ai testfilesource test/TestMergeSort package kwaymergesort repo ./GradingRepos/repos/cse247-s18-students-d.ai
+     [copy] Copying 1 file to /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-d.ai/labs/kwaymergesort/test
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Compiling the code
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+compile:
+     [echo] Compiling kwaymergesort/KWayMergeSort
+    [mkdir] Created dir: /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-d.ai/bin
+    [javac] Compiling 1 source file to /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-d.ai/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+compile:
+     [echo] Compiling kwaymergesort/test/TestMergeSort
+    [javac] Compiling 1 source file to /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-d.ai/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Running test test.TestMergeSort
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+test:
+    [junit] Running kwaymergesort.test.TestMergeSort
+    [junit] Testsuite: kwaymergesort.test.TestMergeSort
+    [junit] 16-way merge sort of 256 integers
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.046 sec
+    [junit] Output:
+    [junit] 16-way merge sort of 256 integers
+    [junit] 
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.046 sec
+    [junit] ------------- Standard Output ---------------
+    [junit] 16-way merge sort of 256 integers
+    [junit] ------------- ---------------- ---------------
+    [junit] 
+    [junit] Testcase: sortTest took 0.024 sec
+    [junit] 	Caused an ERROR
+    [junit] -1
+    [junit] java.lang.ArrayIndexOutOfBoundsException: -1
+    [junit] 	at kwaymergesort.KWayMergeSort.merge(KWayMergeSort.java:69)
+    [junit] 	at kwaymergesort.KWayMergeSort.kwaymergesort(KWayMergeSort.java:46)
+    [junit] 	at kwaymergesort.test.TestMergeSort.sortOnce(TestMergeSort.java:39)
+    [junit] 	at kwaymergesort.test.TestMergeSort.sortTest(TestMergeSort.java:25)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+
+BUILD FAILED
+/Users/puneetsachdeva/cse247-support/build.xml:34: Test kwaymergesort.test.TestMergeSort failed
+
+Total time: 0 seconds
+========
+Testing in ./GradingRepos/repos/cse247-s18-students-d.ai: kwaymergesort as of 
+========
+Now in: /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-d.ai
+Your branch is up-to-date with 'origin/master'.
+HEAD is now at 2e2dc6b robograde
+No local changes to save
+
+Already up-to-date.
+Going back in time to: 
+At hash 2e2dc6b67643dcd1f6d638a5ad8e8d54b763828d
+
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+copytest:
+     [echo] would copy from /Users/puneetsachdeva/git/cse247-s18-students key d.ai testfilesource test/TestMergeSort package kwaymergesort repo ./GradingRepos/repos/cse247-s18-students-d.ai
+     [copy] Copying 1 file to /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-d.ai/labs/kwaymergesort/test
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Compiling the code
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+compile:
+     [echo] Compiling kwaymergesort/KWayMergeSort
+    [mkdir] Created dir: /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-d.ai/bin
+    [javac] Compiling 1 source file to /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-d.ai/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+compile:
+     [echo] Compiling kwaymergesort/test/TestMergeSort
+    [javac] Compiling 1 source file to /Users/puneetsachdeva/cse247-support/GradingRepos/repos/cse247-s18-students-d.ai/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Running test test.TestMergeSort
+Buildfile: /Users/puneetsachdeva/cse247-support/build.xml
+
+test:
+    [junit] Running kwaymergesort.test.TestMergeSort
+    [junit] Testsuite: kwaymergesort.test.TestMergeSort
+    [junit] 16-way merge sort of 4096 integers
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.05 sec
+    [junit] Output:
+    [junit] 16-way merge sort of 4096 integers
+    [junit] 
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.05 sec
+    [junit] ------------- Standard Output ---------------
+    [junit] 16-way merge sort of 4096 integers
+    [junit] ------------- ---------------- ---------------
+    [junit] 
+    [junit] Testcase: sortTest took 0.03 sec
+    [junit] 	Caused an ERROR
+    [junit] -1
+    [junit] java.lang.ArrayIndexOutOfBoundsException: -1
+    [junit] 	at kwaymergesort.KWayMergeSort.merge(KWayMergeSort.java:69)
+    [junit] 	at kwaymergesort.KWayMergeSort.kwaymergesort(KWayMergeSort.java:46)
+    [junit] 	at kwaymergesort.KWayMergeSort.kwaymergesort(KWayMergeSort.java:38)
+    [junit] 	at kwaymergesort.test.TestMergeSort.sortOnce(TestMergeSort.java:39)
+    [junit] 	at kwaymergesort.test.TestMergeSort.sortTest(TestMergeSort.java:25)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+
+BUILD FAILED
+/Users/puneetsachdeva/cse247-support/build.xml:34: Test kwaymergesort.test.TestMergeSort failed
+
+Total time: 0 seconds
+================
+Lab is not counted -- failed unit tests
+================
+
+CSE247 Robot tester ends testing kwaymergesort on 2018-04-07 13:32:40 -0500
+-------------------

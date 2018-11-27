@@ -8,8 +8,8 @@ Students in your studio group:
 
     Name        Student ID (begins with a 4)
 	
-1.
-2.
+1.	Di Ai		d.ai
+2.	Zhanyi Yao	zhanyi.yao
 3.
 4.
 5.
@@ -23,24 +23,45 @@ A1. Why do sad and happy appear as they do? Why is happy indented? What are the 
 
 Modify the code in the main method so that some string appears above sad, indented as much as happy.
 
+Because "sad" is the root of the BST, and when "happy" is added, it is alphabetically smaller than "sad", so it is added to the left-child position of this BST.
+
 A2. What string did you use?
+
+"middle"
 
 In the numbers that follow, find the first and last entries in the tree that is shown (on its side, as discussed in lecture).
 
+50, 247
+
 A3. Is the first number always the first line to be shown in such a display?
+
+Yes
 
 A4. Is the last number always the last line to be shown?
 
+Not always.
+
 A5. Why do we need addHelper?
+Because we will need to decide where to put this number in the BST. There is only one parameter for the BST class. 
+So, using an addhelper will enable us to use more parameters to add in the tree. 
 
 A6. Why is it private instead of public?
 
+We just only want BST to use this method not the whole?
+
 A7. Does the code actually remove the node containing the value to be removed? If not, what is actually happening?
+It does not remove the node. Instead, it replace the value of the node as null or one of its child. It first tests the node has a child or not. 
+If it does not have a child, then just remove this node, which set the value of this node as null. 
+If this node has only one child, then ,it will replace the value of its child. 
+If the node has two children, then the value of the node will be replaced by the least value of its right children.
+
 
 A8. Why does the code fail to execute properly?
+java.awt.Color cannot be cast to java.lang.Comparable. So, it will return an error.
 
 A9. Why does eclipse not report a problem when you try to create a BST of type Color?
-
+java.awt.Color cannot be cast to java.lang.Comparable. So, it will return an error. 
+It does not report a problem because the code allows us to add in any object o
 
 Part B
 
@@ -48,24 +69,33 @@ Part B
 SortedSetUsingBST (random input)
 
 B1. What behavior do you see in the output? You will likely have to rely on ticks rather than time, because the times are so fast.
+I see there is a straight line output.
 
 B2. What behavior did you expect to see, and why?
-
+Because it is random input. So, the tree will be fairly balanced. 
+So, there are n elements in the tree and this is a binary tree, so you only have to go over log_2(n) times to find the target element. 
 
 SortedSetUsingBST (sorted input)
 
 B3. What behavior do you see in the output given the sorted input?
+an exponentially increasing time complexity
 
 B4. What behavior did you expect to see, and why?
+So for the worst case scenario that we have to go reverse sequence to make every input to be sorted.
 
 SortedSetUsingUnorderedList
 
 B5. What behavior do you see in the output when a sorted set is implemented by an unordered list? Adding to the list should be quick, so why are we seeing these times?
+an exponentially increasing time complexity
 
 B6. What behavior did you expect to see, and why?
+Because you have to go over the entire unordered list to find the target number and then sort it.
 
-
-
+Devise a sequence of insertions of 15 integers so that no rotations are ever necessary:
+8, 
+4, 12, 
+2, 6, 10, 14, 
+1, 3, 5, 7, 9, 11, 13, 15
 
 
 
